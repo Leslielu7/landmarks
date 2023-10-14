@@ -18,6 +18,12 @@ struct LandmarkRow: View {
             Text(landmark.name)
             
             Spacer()
+            
+            //add favorite icon
+            if landmark.isFavorite{
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
         }
         
         
